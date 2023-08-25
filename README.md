@@ -1,7 +1,6 @@
 # TikTok Downloader (No Watermark)
 
-A simple and efficient tool to download TikTok videos without any watermark. This project is hosted on the Firebase Cloud Function platform, offering fast response times and seamless integration with other Firebase services.
-
+A simple and efficient tool to download TikTok videos without any watermark. This project is hosted on the Firebase Cloud Function platform.
 ## Features
 
 - **No Watermark**: Downloads TikTok videos without the distracting watermark.
@@ -14,15 +13,21 @@ A simple and efficient tool to download TikTok videos without any watermark. Thi
 
 ## Deployment
 
-This project is deployed on Firebase Cloud Functions. Ensure you have Firebase CLI set up and authenticated.
+This project is deployed on Firebase Cloud Functions. Ensure you've done the following:
 
-1. Download firebase cli
-2. Initialize firebase cloud function project ( This repo is missing some files )
+1. Create a project on firebase console
+2. Install python firebase SDK
+   ```shell
+   pip install firebase-admin
+   ```
+4. Install [Firebase CLI](https://firebase.google.com/docs/cli#mac-linux-auto-script) 
+   
+6. Initialize firebase cloud function project ( This repo is missing some files )
    ```shell
    firebase init functions
    ```
-4. Ensure all used dependencies are in 'requirements.txt' 
-5. Deploy to firebase
+7. Ensure all used dependencies are in 'requirements.txt' 
+8. Deploy to firebase
    ```shell
    firebase deploy --only functions
    ```
@@ -38,3 +43,14 @@ response = requests.post(url, data=data)
 with open('video.mp4', 'wb') as f:
     f.write(response.content)
 ```
+
+
+## Integration with iPhone Shortcuts
+1. [Download Shortcut](https://www.icloud.com/shortcuts/84d1eab18abf40e6bbb24a653fb57407)
+   ```
+   NOTE: Replace the API endpoint with your own cloud function endpoint
+   ```
+3. Add Shortcut to Quick Actions
+
+<img src="https://github.com/Wa-lead/firebase_cloud_tiktok_downloader/assets/81301826/47cb5d72-ca4b-4db0-85c4-244038250b32" alt="drawing" style="width:200px;"/>
+
