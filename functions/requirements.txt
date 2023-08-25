@@ -1,0 +1,4 @@
+firebase_functions~=0.1.0
+Requests==2.31.0
+beautifulsoup4==4.11.1
+Flask==2.2.3
