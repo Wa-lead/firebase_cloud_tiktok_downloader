@@ -18,14 +18,15 @@ This project is deployed on Firebase Cloud Functions. Ensure you have Firebase C
 
 1. Download firebase cli
 2. Initialize firebase cloud function project
-'''
+   
+```shell
 firebase init functions
-'''
-3. Ensure all dependencies are in 'requirements.txt'
-4. Deploy to firebase
-'''
+```
+4. Ensure all dependencies are in 'requirements.txt'
+5. Deploy to firebase
+```shell
 firebase deploy --only functions
-'''
+```
 
 ## Example request
 
