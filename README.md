@@ -17,16 +17,15 @@ A simple and efficient tool to download TikTok videos without any watermark. Thi
 This project is deployed on Firebase Cloud Functions. Ensure you have Firebase CLI set up and authenticated.
 
 1. Download firebase cli
-2. Initialize firebase cloud function project
-   
-```shell
-firebase init functions
-```
-4. Ensure all dependencies are in 'requirements.txt'
+2. Initialize firebase cloud function project ( This repo is missing some files )
+   ```shell
+   firebase init functions
+   ```
+4. Ensure all used dependencies are in 'requirements.txt' 
 5. Deploy to firebase
-```shell
-firebase deploy --only functions
-```
+   ```shell
+   firebase deploy --only functions
+   ```
 
 ## Example request
 
